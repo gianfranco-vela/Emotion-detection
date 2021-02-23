@@ -1,0 +1,8 @@
+sciter-sdk
+venv
+data
+screenshots
+.idea/
+src/__pycache__/
+src/model.h5
+src/plot.png
