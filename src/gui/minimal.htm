@@ -1,5 +1,98 @@
 <html>
-  <body>
-     <p><input type="button"></p>
-  </body>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>
+        Emotionserkennung meine-vorsorgedokumente.de
+    </title>
+    <style>
+        html {
+        font-family: 'Lato', sans-serif;
+        background-color: white;
+        color:#4f5160;
+        /*overflow: hidden;*/
+        padding-left: 20dip;
+        min-width:20%;
+      }
+      div#boundingBox {
+      width: 100%;
+      text-align:center;
+      }
+
+      div#titleBox{
+      padding-left: 20%;
+      padding-right:20%;
+      text-align: center;
+      }
+      button{
+      color:white;
+      border: none;
+      box-shadow: none;
+        width: auto;
+        min-width: 224px;
+        margin: 15px auto 10px;
+        padding: 15px 30px;
+        float: none;
+        border-radius: 8px;
+        background: #3fc3bf;
+        font-weight: 400;
+        font-size:18px;
+        text-align: center;
+        transition: all .5s ease;
+      }
+      button:hover{
+          box-shadow: 0 20px 15px -10px #4f516061;
+  transform: translateY(-5px);
+      }
+      div.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+div.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+    </style>
+    <script type="text/tiscript">
+
+      $(button#start).on("click", function() {
+        view.start();
+      });
+
+      $(button#stop).on("click", function() {
+        view.stop();
+      });
+
+
+
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="wrapper">
+        <div id="titleBox">
+            <h1>
+                Herzlich Willkommen zur Emotionserkennung von meine-vorsorgedokumente.de!
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+
+        </div>
+        <div id="boundingBox">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+</div>
+</body>
 </html>
